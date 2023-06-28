@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void changeSecondActivity(int image) {
 
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("Clave", image);
+        intent.putExtra("image", image);
         startActivity(intent);
     }
 }

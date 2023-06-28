@@ -3,6 +3,7 @@ package cl.awakelab.actividadpracticanueve;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,11 +16,11 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        
+
         initListener();
 
         Intent intent = getIntent();
-        int idImagen = intent.getIntExtra("clave",0);
+        int idImagen = intent.getIntExtra("image", 0);
         ImageButton imgSecond = findViewById(R.id.imageSecond);
         imgSecond.setImageResource(idImagen);
     }
