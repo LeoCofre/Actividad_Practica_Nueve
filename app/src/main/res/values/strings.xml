@@ -2,4 +2,8 @@
     <string name="app_name">Actividad Practica Nueve</string>
     <string name="back">Back</string>
     <string name="imagen_secundaria">Imagen secundaria</string>
+    <string name="imagen_de_android">imagen de android</string>
+    <string name="imagen_de_telefono">imagen de telefono</string>
+    <string name="imagen_de_reloj">imagen de reloj</string>
+    <string name="imagen_de_carro">imagen de carro</string>
 </resources>

@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9CCC65"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/button1"
         style="@style/btnStyle"
+        android:contentDescription="@string/imagen_de_android"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -21,6 +23,7 @@
         android:id="@+id/button2"
         style="@style/btnStyle"
         android:layout_marginStart="32dp"
+        android:contentDescription="@string/imagen_de_telefono"
         app:layout_constraintBottom_toBottomOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -32,6 +35,7 @@
     <ImageButton
         android:id="@+id/button3"
         style="@style/btnStyle"
+        android:contentDescription="@string/imagen_de_reloj"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button1"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,6 +47,7 @@
     <ImageButton
         android:id="@+id/button4"
         style="@style/btnStyle"
+        android:contentDescription="@string/imagen_de_carro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.0"
