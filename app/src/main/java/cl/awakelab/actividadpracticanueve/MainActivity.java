@@ -7,8 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-
 public class MainActivity extends AppCompatActivity {
+
+    int imagenUno = R.drawable.image_uno;
+    int imagenDos = R.drawable.image_dos;
+    int imagenTres = R.drawable.image_tres;
+    int imagenCuatro = R.drawable.image_cuatro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,39 +28,16 @@ public class MainActivity extends AppCompatActivity {
         ImageButton botonTres = findViewById(R.id.button3);
         ImageButton botonCuatro = findViewById(R.id.button4);
 
-        botonUno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeSecondActivity();
-
-            }
-        });
-        botonDos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeSecondActivity();
-
-            }
-        });
-        botonTres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeSecondActivity();
-
-            }
-        });
-        botonCuatro.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeSecondActivity();
-
-            }
-        });
+        botonUno.setOnClickListener(v -> changeSecondActivity(imagenUno));
+        botonDos.setOnClickListener(v -> changeSecondActivity(imagenDos));
+        botonTres.setOnClickListener(v -> changeSecondActivity(imagenTres));
+        botonCuatro.setOnClickListener(v -> changeSecondActivity(imagenCuatro));
     }
 
-    public void changeSecondActivity() {
+    public void changeSecondActivity(int image) {
 
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("Clave", image);
         startActivity(intent);
     }
 }
